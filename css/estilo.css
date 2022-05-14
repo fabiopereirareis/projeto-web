@@ -36,6 +36,7 @@ footer {
 
 nav {
     /* background-color: brown; */
+    padding-top: 20px;
     background-color: #f1f1f1;
 }
 
@@ -64,12 +65,18 @@ aside {
 }
 
 .conteudo{
-    margin: auto;
+    /* margin: auto; */
+}
+
+.conteudo h1{
+    text-align: center;
 }
 
 .linha{
+    padding-left: 15%;
     
 }
+
 
 .linha:after {
     content: "";
@@ -109,6 +116,27 @@ aside {
     }
 
     aside {
+        display: none;
+    }
+
+    .linha{
+        padding: 5px;
+        
+    }
+
+    .item {
+        /* margin: 5px; */
+        border: 1px solid #ccc;
+        float: left;
+        width: auto;
+        /* width: 33.33%; */
+        height: auto;
+        /* height: 250px; */
+        text-align: center;
+        /* width: 180px; */
+    }
+
+    nav{
         display: none;
     }
 }
