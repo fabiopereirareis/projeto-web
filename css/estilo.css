@@ -1,0 +1,114 @@
+* {
+
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 250px 1fr 250px;
+    /* 3 colunas "fr" fração da tela */
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+header,
+footer {
+    grid-column: span 3;
+    /* mescla coluna*/
+    height: 80px;
+    text-align: center;
+    color: azure;
+}
+
+header {
+    background-color: black;
+}
+
+footer {
+    background-color: black;
+}
+
+nav {
+    /* background-color: brown; */
+    background-color: #f1f1f1;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+}
+
+nav li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color on hover */
+nav li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+aside {
+    background-color: cadetblue;
+}
+
+.conteudo{
+    margin: auto;
+}
+
+.linha{
+    
+}
+
+.linha:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.item {
+    /* margin: 5px; */
+    border: 1px solid #ccc;
+    float: left;
+    width: 33.33%;
+    height: 250px;
+    text-align: center;
+    /* width: 180px; */
+}
+
+.item:hover {
+    border: 1px solid #777;
+}
+
+.item img {
+    width: 90px;
+    /* height: auto; */
+}
+
+.item figcaption {
+    padding: 15px;
+    text-align: center;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    aside {
+        display: none;
+    }
+}
