@@ -1,8 +1,9 @@
 * {
-
     box-sizing: border-box;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 body {
     padding: 0;
     margin: 0;
@@ -17,8 +18,7 @@ body {
     min-height: 100vh;
 }
 
-header,
-footer {
+header,footer {
     grid-column: span 3;
     /* mescla coluna*/
     height: 80px;
@@ -37,7 +37,7 @@ footer {
 nav {
     /* background-color: brown; */
     padding-top: 20px;
-    background-color: #f1f1f1;
+    background-color: #b26308;
 }
 
 nav ul {
@@ -66,6 +66,7 @@ aside {
 
 .conteudo{
     /* margin: auto; */
+    margin: 0 auto;
 }
 
 .conteudo h1{
@@ -73,8 +74,7 @@ aside {
 }
 
 .linha{
-    padding-left: 15%;
-    
+    padding-left:15%;
 }
 
 
@@ -85,13 +85,15 @@ aside {
 }
 
 .item {
-    /* margin: 5px; */
+    margin: 5px;
     border: 1px solid #ccc;
+    border-radius: 15px;
     float: left;
     width: 33.33%;
-    height: 250px;
+    height: 300px;
+    /*aumente a altura de 250px para 300px, porque assim as legendas das imagens grandes não saem da caixa.*/
     text-align: center;
-    /* width: 180px; */
+    width: 180px; 
 }
 
 .item:hover {
@@ -99,8 +101,9 @@ aside {
 }
 
 .item img {
-    width: 90px;
-    /* height: auto; */
+    /* width: 90px; */
+    width: 25%;
+    /* height: auto;  */
 }
 
 .item figcaption {
@@ -108,35 +111,42 @@ aside {
     text-align: center;
 }
 
+#temperos img, #bebidas img, #higiene-limpeza img{
+    /* width: 30%; */
+    /*coloquei o width : 30%, para todas as imagens buscarem um parâmetro e entrarem na caixa*/
+}
+
 
 @media (max-width: 768px) {
     .container {
-        display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: nowrap;
     }
-
-    aside {
+    figure{
+        border: 1px solid #000;
+    }
+    aside{
         display: none;
     }
-
     .linha{
         padding: 5px;
-        
     }
-
     .item {
-        /* margin: 5px; */
+        margin: 5px;
         border: 1px solid #ccc;
         float: left;
         width: auto;
-        /* width: 33.33%; */
+        width: 33.33%;
         height: auto;
-        /* height: 250px; */
+        height: 250px; 
         text-align: center;
-        /* width: 180px; */
+        width: 180px;
     }
-
+    nav ul{
+        width: 100px;
+        font-size: small;
+    }
     nav{
-        display: none;
+        width: 100px;
     }
 }
