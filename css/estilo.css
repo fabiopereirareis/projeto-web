@@ -14,9 +14,9 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: 250px 1fr 250px;
+    grid-template-columns: 250px 1fr ;
     /* 3 colunas "fr" fração da tela */
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: auto 1fr ;
     min-height: 100vh;
 }
 
