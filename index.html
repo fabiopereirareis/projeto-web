@@ -10,7 +10,10 @@
 
 <body>
   <main class="container">
-    <header>Header</header>
+    <header>
+      <img src="imagens/logoA.png" alt="" id="logo">
+      <h1>Supermercado A</h1>
+    </header>
     <nav>
       <ul>
         <li><a href="#carne-frango">Carnes - Frangos</a></li>
@@ -370,6 +373,51 @@
             39,99</figcaption>
         </figure>
       </section>
+      <div class="formulario">
+        <h2>Contato</h2>
+        <form action="/action_page.php">
+        <div class="row">
+          <div class="col-25">
+            <label for="fname">Nome</label>
+          </div>
+          <div class="col-75">
+            <input type="text" placeholder="Seu nome..">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="lname">Sobrenome</label>
+          </div>
+          <div class="col-75">
+            <input type="text" placeholder="Seu sobrenome..">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="estado">Estado</label>
+          </div>
+          <div class="col-75">
+            <select id="country" name="country">
+              <option>SP</option>
+              <option>RJ</option>
+              <option>MG</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="subject">Mensagem</label>
+          </div>
+          <div class="col-75">
+            <textarea placeholder="Mensagem.." style="height:200px"></textarea>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <input type="submit" value="Enviar">
+        </div>
+        </form>
+      </div>
     </section>
     <aside>Links</aside>
     <footer>Footer</footer>
