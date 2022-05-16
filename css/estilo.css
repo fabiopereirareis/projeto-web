@@ -43,10 +43,11 @@ header {
 header h1{
     position: absolute;
     /* display: inline-block; */
-    color: rgb(32, 37, 37);
     padding-left: 300px;
     padding-top: 30px;
     font-size: xx-large;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
 
 footer {
@@ -90,6 +91,8 @@ aside {
 
 .conteudo h1{
     text-align: center;
+    color: coral;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .linha{
