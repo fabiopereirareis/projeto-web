@@ -31,7 +31,8 @@ footer {
 }
 
 header {
-    background-color: rgb(200, 217, 228);
+    background-color: #80C2AF;
+    /* background-color: rgb(200, 217, 228); */
     height: 150px;
     position: relative;
 }
@@ -55,24 +56,39 @@ header h1 {
 }
 
 footer {
-    background-color: rgb(145, 191, 221);
-    height: 50px;
+    background-color: #2A2D34;
+    height: 100px;
     text-align: center;
     padding-top: 10px;
-    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+footer i{
+    font-size: x-large;
+    padding-left: 20px;
+    /* text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue; */
+}
+
+footer h4{
+    /* text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue; */
+}
+
+footer p {
+    text-align: justify;
+    color: #000;
+    font-size: small;
 }
 
 nav {
     /* background-color: brown; */
     padding-top: 20px;
-    background-color: #b26308;
+    background-color: #5C946E ;
 }
 
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 200px;
+    width: 100%;
 }
 
 nav li a {
@@ -84,7 +100,7 @@ nav li a {
 
 /* Change the link color on hover */
 nav li a:hover {
-    background-color: #555;
+    background-color: #2A2D34;
     color: white;
 }
 
@@ -95,6 +111,7 @@ aside {
 .conteudo {
     /* margin: auto; */
     margin: 0 auto;
+    background-color: #A0DDE6;
 }
 
 .conteudo h1 {
@@ -126,6 +143,7 @@ aside {
     text-align: center;
     width: 180px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: aliceblue;
 }
 
 .item:hover {
@@ -151,7 +169,7 @@ aside {
     /*coloquei o width : 30%, para todas as imagens buscarem um parâmetro e entrarem na caixa*/
 }
 
-input[type=text],
+input[type=text],[type=email],
 select,
 textarea {
     width: 100%;
@@ -167,7 +185,7 @@ label {
 }
 
 input[type=submit] {
-    background-color: #04AA6D;
+    background-color: #30C5FF;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -177,7 +195,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: #2A2D34;
 }
 
 .formulario {
@@ -268,12 +286,20 @@ input[type=submit]:hover {
         margin: 5px;
         border: 1px solid #ccc;
         /* float: left; */
-        width: auto;
+        /* width: auto; */
         /* width: 33.33%; */
         /* height: auto; */
         /* height: 250px;  */
         text-align: center;
         width: 180px;
+        height: 150px;
+    }
+
+    .item img {
+        /* width: 90px; */
+        width: 20%;
+        height: 20%;
+        /* height: auto;  */
     }
 
     nav ul {
@@ -293,10 +319,19 @@ input[type=submit]:hover {
     }
 
     footer {
-        background-color: rgb(145, 191, 221);
-        height: 30px;
+        background-color: #2A2D34;
+        height: 80px;
         text-align: center;
         padding-top: 5px;
-        text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+        font-size: medium;
+    }
+    footer i{
+        /* text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue; */
+        font-size: medium;
+        padding-left: 20px;
+    }
+
+    footer p {
+        display: none;
     }
 }
